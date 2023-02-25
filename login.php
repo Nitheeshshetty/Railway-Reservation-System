@@ -6,7 +6,7 @@ $pass=$_POST['psd'];
 
 require('firstimport.php');
 
-$tbl_name="users"; // Table name
+$tbl_name="users"; 
 
 mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 
@@ -24,14 +24,14 @@ if(mysqli_num_rows($result) < 1)
 {
 	echo " .... LOGIN TRY  ....";
 	$_SESSION['error'] = "1";
-	header("location:login1.php"); //
+	header("location:login1.php"); 
 }
 else
 {
-	$_SESSION['name'] = $uname; // Make it so the username can be called by $_SESSION['name']    //
+	$_SESSION['name'] = $uname; 
 	echo " ....   LOGIN  ....";
 	echo $_SESSION['name'];
-	header("location:index.php");    //
+	header("location:index.php");   
 }
 
 ?>
