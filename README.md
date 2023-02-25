@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Railway Reservation System
 
 #RAILWAY RESERVATION SYSTEM should be able to manage all the reservation related functions.
 #Each zone should have same functionalities. Each zone will stores the information about train name, 
