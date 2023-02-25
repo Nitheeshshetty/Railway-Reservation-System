@@ -6,7 +6,7 @@ if(isset($_SESSION['name'])){}
 		header("location:login1.php");
 		
 	}
-$tbl_name="users"; // Table name
+$tbl_name="users"; 
 
 mysqli_select_db($conn,"$db_name")or die("cannot select DB");
 
@@ -36,7 +36,6 @@ if($flag==1){
     window.location.href='signup.php?value=1';
     </SCRIPT>");
 	die("");
-	//echo "oh yes";
 	}
 else{
 	$sql="INSERT INTO $tbl_name(f_name,l_name,password,email,gender,marital,dob,mobile,ques,ans)
