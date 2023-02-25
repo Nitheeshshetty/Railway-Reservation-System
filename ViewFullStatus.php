@@ -167,6 +167,6 @@ mysqli_select_db($conn,"$db_name") or die("cannot select db");
 				
 								<button onClick="window.print()">Print </button>
 		
-	</div>
+			</div>
 </body>
 </html>	
